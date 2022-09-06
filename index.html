@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Emma Crêpe - Votre crêperie locale</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <a href=""><li>Notre histoire</li></a>
-            <a href=""><li>Nos recettes</li></a>
-            <a href="/"><li><img src="./src/64606691_1002102043319869_4851143282836635648_n.png"/></li></a>
-            <a href=""><li>Nous retrouver</li></a>
-            <a href=""><li>Nous contacter</li></a>
-        </ul>
+      <ul>
+        <a href="">
+          <li><p>Notre histoire</p></li>
+        </a>
+        <a href="">
+          <li><p>Nos recettes</p></li>
+        </a>
+        <a href="/">
+          <li>
+            <img
+              src="./src/64606691_1002102043319869_4851143282836635648_n.png"
+              alt="Logo Emma Crêpe"
+            />
+          </li>
+        </a>
+        <a href="">
+          <li><p>Nous retrouver</p></li>
+        </a>
+        <a href="">
+          <li><p>Nous contacter</p></li>
+        </a>
+      </ul>
     </nav>
     <main>
+      <article>
+        <div class="banner">
+          <img
+            src="./src/123137456_1406166389580097_6962944103112615523_n.jpeg"
+          />
+          <h1>Bienvenue chez Emma Crêpe</h1>
+        </div>
+      </article>
+      <div class="pres">
+        <div class="presWTitle">
+          <h2>Vos crêpes salées face à la mer</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            blandit risus urna, ut viverra diam volutpat sed. Aenean iaculis
+            lorem at mauris egestas ornare. Phasellus eget mollis lorem, sed
+            condimentum augue. In sodales dignissim lobortis. Donec semper
+            libero eget lectus tempus finibus. Pellentesque ornare velit ut
+            tortor ornare aliquam. Donec tincidunt, arcu vehicula commodo
+            ultricies, mauris erat lacinia augue, in posuere nibh justo id enim.
+            Sed fermentum bibendum est, consequat tincidunt purus facilisis
+            vitae. Donec in auctor magna. Phasellus laoreet lectus a erat
+            ultricies pulvinar. Donec consectetur dapibus leo eu mattis. Donec
+            nec odio at velit finibus egestas. Ut pellentesque maximus mauris.
+          </p>
+        </div>
+        <img
+          src="./src/292434597_409012791275950_8470686064257940476_n.jpeg"
+          alt="crepe"
+        />
+      </div>
+      <div class="slider">
+        <h2>Nos petits +</h2>
+        <div class="informations">
+                <div class="information">
+                    <div class="logo"><img src="./src/PANNENKOEK.png" alt="" /></div>
+                    <h3>Sympathie</h3>
+                </div>
+                <div class="information">
+                    <div class="logo"><img src="./src/PANNENKOEK.png" alt="" /></div>
+                    <h3>Bas prix</h3>
+                </div>
+                <div class="information">
+                    <div class="logo"><img src="./src/PANNENKOEK.png" alt="" /></div>
+                    <h3>Bien installé</h3>
+                </div>
+                <div class="information">
+                    <div class="logo"><img src="./src/PANNENKOEK.png" alt="" /></div>
+                    <h3>Vue magnifique</h3>
+                </div>
+                <div class="information">
+                    <div class="logo"><img src="./src/PANNENKOEK.png" alt="" /></div>
+                    <h3>Proximité de la plage</h3>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="book">
+        <h2>Réservez une table</h2>
+        <div class="photoAndForm">
+            <img src="./src/158309780_1498663163663752_84248560369216403_n.jpeg" alt="">
+            <form method="post">
+                <div class="nameAndSurname">
+                    <input type="text" name="name" id="name" placeholder="Votre nom">
+                    <input type="text" name="surname" id="surname" placeholder="Votre prénom">
+                </div>
+                <div class="mailAndPhone">
+                    <input type="email" name="mail" id="mail" placeholder="Votre e-mail">
+                    <input type="tel" name="phone" id="phone" placeholder="Votre téléphone">
+                </div>
+                <div class="date">
+                    <input type="date" name="dateBook" id="dateBook">
+                </div>
+                <div class="buttonForm"><button onclick="verifie()">Réservez !</button></div>
+                <div class="msg"></div>
+            </form>
+            
+        </div>
         
+      </div>
     </main>
-</body>
+  </body>
 </html>

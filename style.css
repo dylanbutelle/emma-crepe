@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,9 @@
 html,body{
     height: 100vh;
     overflow: hidden;
+}
+h1,p{
+    color:white;
 }
 nav{
     width: 100%;
@@ -23,17 +27,194 @@ nav ul a{
 }
 nav ul a li{
     list-style-type: none;
+}
+nav ul a li p{
+    
     color:#5E9AA2;
     background: linear-gradient(to top, #5E9AA2 0%, #5E9AA2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .5s;
 }
-nav ul a li:hover{
+nav ul a li p:hover{
     background-size: 100% 100%;
 }
-nav ul a img{
+nav ul a li img{
     width: 100px;
+    background: none;
 }
 main{
     height: 100%;
     background-color: #5E9AA2;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+main article div h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'Hurricane', cursive;
+    font-size: 50px;
+}
+.banner{
+    position: relative;
+    text-align: center;
+}
+.banner img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+.banner h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border:2px solid white;
+}
+.pres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    animation: 1s spawn forwards;
+    margin-top:50px;
+    height: 450px;
+}
+.pres h2{
+    font-size: 40px;
+    color:white;
+}
+.pres img{
+    width: 500px;
+}
+.presWTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100%;
+}
+.slider{
+    height: 500px;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    animation: 1s spawnOther forwards;
+}
+.slider h2{
+    color:#5E9AA2;
+    padding-bottom: 60px;
+}
+.informations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #5E9AA2;
+    padding:0 10px;
+    border-radius: 10px;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+}
+.information h3{
+    color:#5E9AA2;
+}
+.information:last-child{
+    margin-right: 0;
+}
+.information img{
+    width: 80px;
+    transform: translateY(-80px);
+}
+.book{
+    height: 700px;
+    width: 100%;
+    animation: 1s spawn forwards;
+}
+.book h2{
+    color:white;
+    width: 100%;
+    text-align: center;
+    padding:40px;
+}
+.photoAndForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+.photoAndForm img{
+    width: 500px;
+}
+.photoAndForm input{
+    height: 30px;
+    width: 300px;
+}
+.photoAndForm form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nameAndSurname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.mailAndPhone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttonForm{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.buttonForm button{
+    width: 150px;
+}
+input{
+    padding-left: 10px;
+    outline: none;
+}
+.error{
+    outline: 2px solid red;
+}
+.ok{
+    outline: 2px solid green;
+}
+@keyframes spawn {
+    0%{
+        transform: translateX(800px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes spawnOther {
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
